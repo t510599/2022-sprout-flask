@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% if name == "admin" %}
+<h1 style="color: blue">Welcome, {{ name }}</h1>
+{% else %}
+<h1>Welcome, {{ name }}</h1>
+{% endif %}
+{% endblock header %}
+
+{% block content %}
+<img src="https://avatars.githubusercontent.com/u/11243192?s=300&v=4">
+<a href="{{ url_for('logout') }}"><button>Logout</button></a>
+{% endblock content %}
