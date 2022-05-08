@@ -1,4 +1,4 @@
-# 2022-sprout-task
+# 2022-sprout-flask
 
 2022 資訊之芽 新竹區 Python 語法班 Flask 課程 (2022/5/15) 範例程式
 
