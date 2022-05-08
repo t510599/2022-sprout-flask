@@ -19,6 +19,7 @@ def hello():
 def get():
     return request.args
 
+@app.route("/card", defaults={ "name": "???" })
 @app.route("/card/<name>")
 def card(name):
     return f"<h1>This is card for {name}!</h1>" + \
