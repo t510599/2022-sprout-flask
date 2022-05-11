@@ -6,7 +6,7 @@
 - [Hello World](helloworld/)
 - [HTTP & Route](http-route/)
 - [Template Engine: Jinja 2](jinja-template/)
-- [Cookie & SEssion](cookie-session/)
+- [Cookie & Session](cookie-session/)
 
 ## License
 MIT
