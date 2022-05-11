@@ -19,7 +19,7 @@ def index():
 
 @app.route("/cookie")
 def cookie():
-    return request.cookies["sprout"]
+    return request.cookies.get("sprout", "")
 
 @app.route("/setcookie")
 def setcookie():
