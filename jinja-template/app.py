@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, render_template_string, request
 
 app = Flask(__name__, template_folder="templates")
 
@@ -11,6 +11,14 @@ def index():
 def hello():
     param = request.args
     return render_template("hello.html", name=param.get("name"))
+
+@app.route("/render")
+def render():
+    param = request.args
+    template = """
+        <p>{}</p>
+    """.format(param.get("message"))
+    return render_template_string(template)
 
 @app.route("/home", defaults={ "name": "Anonymous" })
 @app.route("/home/<name>")
